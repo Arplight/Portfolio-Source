@@ -1,0 +1,52 @@
+@use "../../../Styles/Variables" as *;
+@use "../../../Styles/Mixins" as *;
+.cube {
+  position: fixed;
+  z-index: -2;
+}
+.cube-xl {
+  width: 150px;
+  height: 150px;
+  opacity: 0.6;
+}
+.cube-md {
+  width: 100px;
+  height: 100px;
+  opacity: 0.8;
+}
+.cube-md-fixed {
+  width: 60px;
+  height: 60px;
+}
+.cube-sm {
+  width: 40px;
+  height: 40px;
+}
+.cube-smr {
+  width: 40px;
+  height: 40px;
+}
+.cube-sm-gravity {
+  width: 30px;
+  height: 30px;
+}
+@media only screen and (max-width: 640px) {
+  .cube-xl {
+    @include responsiveCube(110px);
+  }
+  .cube-md {
+    @include responsiveCube(60px);
+  }
+  .cube-md-fixed {
+    @include responsiveCube(50px);
+  }
+  .cube-sm {
+    @include responsiveCube(30px);
+  }
+  .cube-smr {
+    @include responsiveCube(30px);
+  }
+  .cube-sm-gravity {
+    @include responsiveCube(20px);
+  }
+}

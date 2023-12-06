@@ -1,0 +1,64 @@
+@use "../../Styles/Variables" as *;
+@use "../../Styles/Mixins" as *;
+.contact-form {
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+label {
+  p {
+    font-size: 17px;
+  }
+}
+
+input,
+textarea {
+  background-color: rgba(240, 248, 255, 0);
+  outline: none;
+  padding-inline: 3px;
+  width: 100%;
+  max-height: 50px;
+  transition-duration: $transitionDuration;
+  &:focus {
+    border-bottom: 2px solid $secondaryColor !important;
+  }
+}
+textarea {
+  height: auto;
+}
+.dark-theme .form-dark {
+  color: $fontColorDark;
+  border-bottom: 2px solid $fontColorDark;
+}
+.light-theme .form-light {
+  color: $fontColorLight;
+  border-bottom: 2px solid $fontColorLight;
+}
+
+.dark-theme input:-webkit-autofill,
+.dark-theme input:-webkit-autofill:focus,
+.dark-theme input:-webkit-autofill:hover {
+  -webkit-text-fill-color: $fontColorDark;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.light-theme input:-webkit-autofill,
+.light-theme input:-webkit-autofill:focus,
+.light-theme input:-webkit-autofill:hover {
+  -webkit-text-fill-color: $fontColorLight;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.field-inside {
+  transform: translateY(-12px);
+  color: $secondaryColor;
+}
+.error {
+  color: rgba(197, 0, 0, 0.856);
+  font-size: 14px;
+  margin-top: 5px;
+  position: absolute;
+}

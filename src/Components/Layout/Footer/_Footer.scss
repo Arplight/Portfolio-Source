@@ -1,0 +1,85 @@
+@use "../../../Styles/Variables" as *;
+@use "../../../Styles/Mixins" as *;
+footer {
+  .pagination {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .pagination-active {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: $secondaryColor;
+      transform: rotateZ(45deg);
+    }
+  }
+  .previous,
+  .next {
+    display: flex;
+    padding: 5px;
+    &:not(.pagination-disabled):hover {
+      .arrow {
+        fill: $secondaryColor;
+      }
+    }
+  }
+  .pagination-prev,
+  .pagination-next {
+    padding-block: 5px;
+  }
+  .pagination-disabled .pagination-prev,
+  .pagination-disabled .pagination-next {
+    cursor: not-allowed;
+  }
+  .pagination-link {
+    z-index: 1;
+    padding: 10px;
+  }
+  .pagination-page {
+    &:not(.pagination-active):hover {
+      color: $secondaryColor;
+    }
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    .icon {
+      font-size: 20px;
+      cursor: pointer;
+      &:hover {
+        color: $secondaryColor;
+      }
+    }
+  }
+}
+.light-theme .arrow {
+  fill: $primaryColorDark;
+}
+.dark-theme .arrow {
+  fill: $primaryColorLight;
+}
+.light-theme .pagination-active {
+  color: $primaryColorLight;
+}
+.dark-theme .pagination-active {
+  color: $primaryColorDark;
+}
+
+.dark-theme .pagination-disabled .arrow {
+  fill: rgba(240, 248, 255, 0.336);
+}
+.light-theme .pagination-disabled .arrow {
+  fill: #10162654;
+}

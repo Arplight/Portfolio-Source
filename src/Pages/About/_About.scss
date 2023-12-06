@@ -1,0 +1,17 @@
+@use "../../Styles/Variables" as *;
+@use "../../Styles/Mixins" as *;
+.about {
+  .download {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    img {
+      width: 15px;
+      height: 15px;
+    }
+    &:hover {
+      color: $secondaryColor;
+    }
+  }
+}

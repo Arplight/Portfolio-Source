@@ -1,0 +1,53 @@
+@use "../../../Styles/Variables" as *;
+@use "../../../Styles/Mixins" as *;
+// Logo
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  margin-right: auto;
+  height: max-content;
+  .name {
+    letter-spacing: 2px;
+  }
+  .start-tag {
+    width: 9px;
+    height: 9px;
+  }
+  .end-tag {
+    width: 17px;
+    height: 17px;
+  }
+}
+// Switcher
+.theme-switcher {
+  position: relative;
+  border: 1px dashed $secondaryColor;
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  img {
+    width: 14px;
+    margin: auto;
+  }
+  button {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    transform: translateX(2px);
+    border-radius: 25px;
+    border: 2px solid #5d8863;
+  }
+}
+.dark-theme .dark-switcher {
+  @include switchTheme(true);
+}
+.light-theme .light-switcher {
+  @include switchTheme(false);
+}
+.btn-toggle {
+  transform: translateX(26px) !important;
+}
