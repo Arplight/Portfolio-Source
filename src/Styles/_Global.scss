@@ -1,0 +1,190 @@
+@use "./Variables" as *;
+@use "./Mixins" as *;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "PT Serif", serif;
+  font-weight: 100;
+}
+
+// Layout
+.top-wrapper {
+  height: 100vh;
+  overflow-y: scroll;
+  position: relative;
+  z-index: 2;
+}
+.wrapper {
+  height: 100%;
+}
+
+main {
+  justify-content: center;
+  align-items: center;
+}
+
+header,
+nav,
+main,
+footer {
+  display: flex;
+  padding: 20px;
+}
+
+// Pages
+.home,
+.about,
+.work,
+.skills,
+.contact {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #8a8a8a36;
+  border-radius: 10px;
+  &:hover {
+    background-color: $secondaryColor;
+  }
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+// Dark & Light Theme Classes
+
+.dark-theme {
+  background-color: $primaryColorDark;
+  color: $fontColorDark;
+}
+.light-theme {
+  background-color: $primaryColorLight;
+  color: $fontColorLight;
+}
+.font-secondary {
+  color: $secondaryColor;
+}
+.dark-theme header {
+  border-bottom: $bgGridDark;
+}
+.dark-theme nav {
+  border-right: $bgGridDark;
+}
+.dark-theme footer {
+  border-top: $bgGridDark;
+}
+
+.light-theme header {
+  border-bottom: $bgGridLight;
+}
+.light-theme nav {
+  border-right: $bgGridLight;
+}
+.light-theme footer {
+  border-top: $bgGridLight;
+}
+
+// Headings
+h1 {
+  font-size: $mainHeadingsLarge;
+  line-height: 55px;
+}
+h2 {
+  font-size: $skillsListHeadingSize;
+  color: $secondaryColor;
+  letter-spacing: 3px;
+}
+h3 {
+  font-size: $skillNameHeadingsSize;
+  margin-bottom: 3px;
+}
+
+// Links || Buttons || Paragraphs || Icons
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.main-paragraph {
+  font-size: $mainParagraphSize;
+}
+.work-paragraph {
+  font-size: $workParagraphSize;
+  margin-bottom: 10px;
+}
+.work-skills {
+  font-size: $workSkillSize;
+  font-weight: 700;
+}
+.skill-info {
+  font-size: $skillInfoSize;
+}
+.link {
+  color: $secondaryColor;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0);
+  padding-bottom: 2px;
+  &:hover {
+    border-bottom: 1px dashed $secondaryColor;
+  }
+}
+.main-paragraph,
+.work-paragraph {
+  text-align: justify;
+  line-height: 27px;
+}
+.main-button {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  transition-timing-function: linear;
+  padding-block: $buttonSize;
+  padding-inline: 4 * $buttonSize;
+  outline: none;
+  font-size: $btnFontSize;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.light-theme .button-light {
+  @include btnTheme(false);
+}
+.dark-theme .button-dark {
+  @include btnTheme(true);
+}
+
+// Transition duration
+h1,
+h2,
+h3,
+a,
+p,
+svg,
+b,
+button,
+.Link,
+.top-wrapper,
+header,
+footer,
+nav,
+.start-tag,
+.end-tag,
+.theme-switcher {
+  transition-duration: $transitionDuration !important;
+  transition-timing-function: linear;
+}
+
+// React Reveal
+.home .react-reveal {
+  width: 100%;
+}

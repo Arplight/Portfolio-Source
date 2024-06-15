@@ -1,0 +1,40 @@
+@use "./Variables" as *;
+@mixin btnTheme($isDark) {
+  @if ($isDark) {
+    border: 1px dashed $fontColorDark;
+    &:hover {
+      color: $primaryColorDark;
+      background-color: $secondaryColor;
+      box-shadow: -3px 5px 0px 2px #92d79a17;
+      border: 1px dashed $secondaryColor;
+      text-shadow: 1px 1px 2px#191f2fa2;
+    }
+  } @else {
+    border: 1px dashed $fontColorLight;
+    &:hover {
+      color: $primaryColorLight;
+      background-color: $secondaryColor;
+      box-shadow: -3px 5px 0px 2px #92d79a81;
+      text-shadow: 1px 1px 2px#ecf1f373;
+      border: 1px dashed $secondaryColor;
+    }
+  }
+}
+@mixin switchTheme($isDark) {
+  @if ($isDark) {
+    background-color: #ecf1f328;
+    button {
+      background-color: rgba(206, 206, 206, 0.986);
+    }
+  } @else {
+    background-color: #101626;
+    button {
+      background-color: #101626;
+    }
+  }
+}
+
+@mixin responsiveCube($size) {
+  width: calc($size + 1vw);
+  height: calc($size + 1vw);
+}

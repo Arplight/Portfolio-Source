@@ -1,0 +1,37 @@
+// Template Colors:
+$secondaryColor: #7bb381;
+// Dark Theme
+$primaryColorDark: #101626;
+$fontColorDark: #ffffff;
+$bgGridDark: 1px solid #ecf1f30e;
+// Light Theme
+$primaryColorLight: #ecf1f3;
+$fontColorLight: #101626;
+$bgGridLight: 1px solid #1016262c;
+// Theme Toggler
+$themeTogglerDisabled: #575b67;
+$themeTogglerEnabled: $secondaryColor;
+// Form Alert
+$formAlert: #f44a55;
+
+//Template Font Size
+// Headings
+$mainHeadingsLarge: 44px;
+$mainHeadingsSmall: 34px;
+$skillsListHeadingSize: 24px;
+$skillsListHeadingSizeSmall: 20px;
+$skillNameHeadingsSize: 18px;
+// Links || Buttons || Paragraphs || Icons
+$mainParagraphSize: 16px;
+$workParagraphSize: 15px;
+$workSkillSize: 15px;
+$skillInfoSize: $workParagraphSize;
+$btnFontSize: $mainParagraphSize;
+$navLinkLarge: 22px;
+$navLinkSmall: 18px;
+$formLabelSize: 14px;
+$iconSize: 14px;
+$buttonSize: 9px;
+
+// Transition Duration
+$transitionDuration: 0.2s;

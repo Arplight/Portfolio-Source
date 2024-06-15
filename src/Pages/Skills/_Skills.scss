@@ -1,0 +1,44 @@
+@use "../../Styles/Variables" as *;
+@use "../../Styles/Mixins" as *;
+
+.skills-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 3%;
+    left: -30px;
+    width: 2px;
+    height: 90%;
+    background: #7bb38123;
+  }
+  li {
+    perspective: 500px;
+    display: flex;
+    align-items: center;
+    height: max-content;
+    margin-bottom: 25px;
+    width: max-content;
+    .skill-icon {
+      transition-duration: 0.7s;
+      transition-timing-function: linear;
+      font-size: 18px;
+      margin-right: 10px;
+      transform-style: preserve-3d;
+    }
+  }
+}
+.dark-theme .skills-list {
+  &::before {
+    background: #7bb38123;
+  }
+}
+.light-theme .skills-list {
+  &::before {
+    background: #7bb3815b;
+  }
+}
