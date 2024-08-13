@@ -30,5 +30,5 @@ export default defineConfig({
     jsxFragment: "React.Fragment",
   },
 
-  base: "/Portfolio/",
+  // base: "/portfolio",
 });

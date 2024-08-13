@@ -16,10 +16,18 @@ import {
   SiFirebase,
   SiPostman,
   SiNpm,
+  SiTypescript,
+  SiNextdotjs,
 } from "react-icons/si";
 import { FaGit } from "react-icons/fa";
 
 export const skills_data = [
+  {
+    skill: "Typescript fundamentals",
+    academy: "Mahara-Tech ",
+    certificate_link:
+      "https://drive.google.com/file/d/1cmYCrwfnZ-2_Q0OU2sQ_wBCHDsvcj0zJ/view?usp=sharing",
+  },
   {
     skill: "Web Design",
     academy: "NTI ",
@@ -96,8 +104,10 @@ export const skills_data = [
 
 export const skills_list = [
   { skill_name: "React", skill_icon: SiReact },
+  { skill_name: "Next", skill_icon: SiNextdotjs },
   { skill_name: "Redux", skill_icon: SiRedux },
   { skill_name: "JavaScript", skill_icon: SiJavascript },
+  { skill_name: "TypeScript", skill_icon: SiTypescript },
   { skill_name: "jQuery", skill_icon: SiJquery },
   { skill_name: "Jest", skill_icon: SiJest },
   { skill_name: "Vite", skill_icon: SiVite },
@@ -105,7 +115,7 @@ export const skills_list = [
   { skill_name: "HTML", skill_icon: SiHtml5 },
   { skill_name: "CSS", skill_icon: SiCss3 },
   { skill_name: "SCSS", skill_icon: SiSass },
-  { skill_name: "PugJS", skill_icon: SiPug },
+  // { skill_name: "PugJS", skill_icon: SiPug },
   { skill_name: "Bootstrap", skill_icon: SiBootstrap },
   { skill_name: "Tailwind", skill_icon: SiTailwindcss },
   { skill_name: "Pusher", skill_icon: SiPusher },

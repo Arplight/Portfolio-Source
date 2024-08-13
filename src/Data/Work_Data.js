@@ -5,7 +5,8 @@ import Portfolio from "../assets/Images/Work/Portfolio.png";
 import MetaPortfolio from "../assets/Images/Work/Meta_Portfolio.png";
 import Shawerma from "../assets/Images/Work/ShawermaKrakow.png";
 import Aroma from "../assets/Images/Work/Aroma.png";
-
+import Taskhive from "../assets/Images/Work/Taskhive.png";
+import Clicon from "../assets/Images/Work/Clicon.png";
 export const projects = [
   {
     project_name: "Shawerma",
@@ -18,6 +19,18 @@ export const projects = [
     project_code:
       "https://drive.google.com/drive/folders/1enHqktN-PvMe5HoxnFOMhMkEJD7FYDgS?usp=drive_link",
     projectType: "full",
+    withMultiLinks: true,
+  },
+  {
+    project_name: "Clicon",
+    project_description:
+      "Developed an eCommerce website using Next.js, integrating it with the JSON Fake Store API via RESTful APIs to provide a seamless, dynamic, and responsive shopping experience.",
+    project_skills:
+      "Next.js,\u00A0 Typescript,\u00A0 Redux,\u00A0 SCSS,\u00A0 Tailwind, \u00A0 RESTful API's",
+    project_image: Clicon,
+    project_demo: "https://clicon-kappa.vercel.app/",
+    project_code: "https://github.com/Arplight/Clicon",
+    projectType: "demo",
     withMultiLinks: true,
   },
   {
@@ -35,12 +48,24 @@ export const projects = [
     withMultiLinks: false,
   },
   {
+    project_name: "Taskhive",
+    project_description:
+      "Built a to-do app with CRUD functionality and real-time data sync using Firebase, providing a smooth and interactive task management experience.",
+    project_skills:
+      "React,\u00A0 Firebase,\u00A0 Context \u00A0, SCSS,\u00A0 Tailwind,\u00A0 PWA",
+    project_image: Taskhive,
+    project_demo: "https://taskhive-eefcd.web.app",
+    project_code: "https://github.com/Arplight/TaskHive",
+    projectType: "demo",
+    withMultiLinks: true,
+  },
+  {
     project_name: "X-beat",
     project_description:
       "Using React, X-Beat delivers a stylish, easy-to-use headphones store for modern music lovers.",
     project_skills: "React,\u00A0 SCSS,\u00A0 Tailwind,\u00A0 PWA",
     project_image: Xbeat,
-    project_demo: "https://arplight.github.io/X-Beat/",
+    project_demo: "https://x-beat-arp.netlify.app",
     project_code: "https://github.com/Arplight/X_Beat-Source",
     projectType: "demo",
     withMultiLinks: true,
@@ -51,7 +76,7 @@ export const projects = [
       "I aimed for a straightforward portfolio site with a minimalist design that strikes a balance between simplicity and subtle.",
     project_skills: "React,\u00A0 SCSS,\u00A0 Tailwind,\u00A0 GSAP,\u00A0 PWA",
     project_image: Portfolio,
-    project_demo: "https://arplight.github.io/Portfolio/",
+    project_demo: "https://portfolio-arp.netlify.app",
     project_code: "https://github.com/Arplight/Portfolio-Source",
     projectType: "demo",
     withMultiLinks: true,
@@ -62,7 +87,7 @@ export const projects = [
       "Created a dynamic META-Portfolio app, unifying projects into an interactive showcase during the META Front-End Certificate.",
     project_skills: "React,\u00A0 SCSS ",
     project_image: MetaPortfolio,
-    project_demo: "https://arplight.github.io/Meta-Portfolio/",
+    project_demo: "https://meta-portfolio-arp.netlify.app",
     project_code: "https://github.com/Arplight/Meta-Portfolio-Source",
     projectType: "demo",
     withMultiLinks: true,
@@ -73,7 +98,7 @@ export const projects = [
       "Crafted a compelling Front-End project tailored for an SEO agency, highlighting their expertise through intuitive design and engaging visuals.",
     project_skills: "JavaScript,\u00A0 SCSS,\u00A0 pugJS,\u00A0 Bootstrap",
     project_image: Tale,
-    project_demo: "https://arplight.github.io/Tale-SEO-Agency/index.html",
+    project_demo: "https://tale-arp.netlify.app",
     project_code: "https://github.com/Arplight/Tale-SEO-Agency",
     projectType: "demo",
     withMultiLinks: true,
@@ -85,7 +110,7 @@ export const projects = [
     project_skills:
       "HTML,\u00A0 CSS,\u00A0 JavaScript,\u00A0 jQuery,\u00A0 Bootstrap",
     project_image: Builderz,
-    project_demo: "https://arplight.github.io/Builderz_Construction/",
+    project_demo: "https://builderz-arp.netlify.app",
     project_code: "https://github.com/Arplight/Builderz_Construction",
     projectType: "demo",
     withMultiLinks: true,

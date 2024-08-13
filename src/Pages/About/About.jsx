@@ -21,7 +21,7 @@ export default function About() {
       <Fade delay={800}>
         <div className="download">
           <img src={Download} />
-          <a href="https://drive.google.com/file/d/1soAho5OtxJnSifoJYT4L0eyDmVYv3F5k/view?usp=sharing">
+          <a href="https://drive.google.com/file/d/1zrpq-Ja8VRm72CY5USOCmwg1jPzWUdtc/view?usp=sharing">
             DOWNLOAD {"\u00A0"}CV
           </a>
         </div>
