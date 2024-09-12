@@ -7,7 +7,6 @@ export default function About() {
   return (
     <div className="about  gap-y-8 flex-col">
       <Seo title="About | Portfolio" url="/About" />
-
       <Slide top>
         <h1>Hi, I’m Muhammad</h1>
       </Slide>
@@ -21,7 +20,7 @@ export default function About() {
       <Fade delay={800}>
         <div className="download">
           <img src={Download} />
-          <a href="https://drive.google.com/file/d/1zrpq-Ja8VRm72CY5USOCmwg1jPzWUdtc/view?usp=sharing">
+          <a href="https://drive.google.com/file/d/1m5CubQVd2F_dmc-OibBlGCIwR8ObOcfP/view?usp=sharing">
             DOWNLOAD {"\u00A0"}CV
           </a>
         </div>
