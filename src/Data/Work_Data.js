@@ -8,17 +8,18 @@ import Aroma from "../assets/Images/Work/Aroma.png";
 import Taskhive from "../assets/Images/Work/Taskhive.png";
 import Clicon from "../assets/Images/Work/Clicon.png";
 import Caio from "../assets/Images/Work/caio.png";
+import Trimar from "../assets/Images/Work/trimar.png";
 export const projects = [
   {
-    project_name: "Shawerma",
+    project_name: "Trimar",
     project_description:
-      "Developed an eCommerce website with React, integrating Laravel backend via RESTful APIs for a seamless, dynamic, and responsive shopping experience.",
+      "Developed a versatile platform that allows users to manage their portfolio, projects, and blogs seamlessly. Key features include",
     project_skills:
-      "React,\u00A0 Redux,\u00A0 SCSS,\u00A0 Tailwind,\u00A0 PWA, \u00A0 RESTful API's",
-    project_image: Shawerma,
-    project_demo: "https://shawermakrakow.com/KlubHaus/",
+      "Next.js,\u00A0 Typescript ,\u00A0 Firebase,\u00A0  Context,\u00A0 Tailwind,\u00A0 PWA, \u00A0 RESTful API's",
+    project_image: Trimar,
+    project_demo: "https://trimar.vercel.app/en",
     project_code:
-      "https://drive.google.com/drive/folders/1enHqktN-PvMe5HoxnFOMhMkEJD7FYDgS?usp=drive_link",
+      "https://drive.google.com/drive/folders/1W4mgnx3X35TDO4YHxThsHwmbU0xKH3JL?usp=sharing",
     projectType: "full",
     withMultiLinks: true,
   },
@@ -32,6 +33,19 @@ export const projects = [
     project_demo: "https://caio-eg.com/",
     project_code:
       "https://drive.google.com/drive/folders/1xNvfNnr0z_aLUbi2SdEuO-a5xV3bNUHu?usp=sharing",
+    projectType: "full",
+    withMultiLinks: true,
+  },
+  {
+    project_name: "Shawerma",
+    project_description:
+      "Developed an eCommerce website with React, integrating Laravel backend via RESTful APIs for a seamless, dynamic, and responsive shopping experience.",
+    project_skills:
+      "React,\u00A0 Redux,\u00A0 SCSS,\u00A0 Tailwind,\u00A0 PWA, \u00A0 RESTful API's",
+    project_image: Shawerma,
+    project_demo: "https://shawermakrakow.com/KlubHaus/",
+    project_code:
+      "https://drive.google.com/drive/folders/1enHqktN-PvMe5HoxnFOMhMkEJD7FYDgS?usp=drive_link",
     projectType: "full",
     withMultiLinks: true,
   },
