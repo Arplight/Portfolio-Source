@@ -13,7 +13,7 @@ export default function Home() {
       <div className="w-full xl:w-3/5  flex flex-col gap-10 items-center sm:items-start">
         <Slide top>
           <h1 className="text-center sm:text-start">
-            I’m a Front-end developer based in Cairo, Egypt
+            I’m a Front-end developer based in Alexandria, Egypt
           </h1>
         </Slide>
         <Fade delay={400}>
