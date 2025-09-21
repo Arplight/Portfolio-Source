@@ -21,7 +21,7 @@ export default function About() {
         <div className="download">
           <img src={Download} />
           <a
-            href="https://drive.google.com/file/d/1FaLMPGuwpUVGBD7Bxaimx7s7d8Vefy-A/view?usp=sharing"
+            href="https://drive.google.com/file/d/1CHeuO-yHoAcZxmsBWH7fxr1XejB6v4OE/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >
